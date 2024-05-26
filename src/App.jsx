@@ -43,6 +43,22 @@ function App() {
                         snapshot.isDragging ? "shadow-lg z-10" : ""
                       }`}
                     >
+                      <div className="cursor-grab">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          className="w-6 h-6"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M4 6h16M4 10h16M4 14h16M4 18h16"
+                          />
+                        </svg>
+                      </div>
                       <div className="flex-grow">
                         <input
                           type="text"
@@ -52,27 +68,6 @@ function App() {
                           }
                           className="border border-gray-300 rounded p-2 w-full"
                         />
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <button className="bg-blue-500 text-white rounded px-4 py-2">
-                          Button
-                        </button>
-                        <div className="cursor-grab">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            className="w-6 h-6"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M4 6h16M4 10h16M4 14h16M4 18h16"
-                            />
-                          </svg>
-                        </div>
                       </div>
                     </div>
                   )}
