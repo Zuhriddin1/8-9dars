@@ -1,13 +1,11 @@
 import { useState } from "react";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
-import "tailwindcss/tailwind.css";
-
-const initialItems = [
+const Data = [
   { id: "Input-1", value: "", key: "" },
   { id: "Input-2", value: "", key: "" },
 ];
 function App() {
-  const [items, setItems] = useState(initialItems);
+  const [items, setItems] = useState(Data);
   const handleDragEnd = (result) => {
     if (!result.destination) return;
     const newItems = Array.from(items);
@@ -102,5 +100,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
